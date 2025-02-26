@@ -7,7 +7,7 @@
     "start": "next dev",
     "dev": "next dev",
     "build": "next build",
-    "predeploy": "next build && next export",
+    "predeploy": "next build", 
     "deploy": "gh-pages -d out"
   },
   "author": "Neo2724",

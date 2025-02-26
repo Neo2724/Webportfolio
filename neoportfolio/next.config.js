@@ -3,8 +3,8 @@ const nextConfig = {
   output: 'export',
   reactStrictMode: true,
   swcMinify: true,
-  basePath: '/neoportfolio', // Replace 'Webportfolio' with your repository name
-  assetPrefix: '/neoportfolio/', // Replace 'Webportfolio' with your repository name
+  basePath: '/Webportfolio/neoportfolio', // Adjusted to match the repository and directory structure
+  assetPrefix: '/Webportfolio/neoportfolio/', // Adjusted to match the repository and directory structure
 };
 
 module.exports = nextConfig;
