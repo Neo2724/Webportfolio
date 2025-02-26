@@ -1,11 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // Ensure this line is included for static export
+  output: 'export',
   reactStrictMode: true,
   swcMinify: true,
-  images: {
-    unoptimized: true,
-  },
+  basePath: '/neoportfolio', // Replace 'Webportfolio' with your repository name
+  assetPrefix: '/neoportfolio/', // Replace 'Webportfolio' with your repository name
 };
 
 module.exports = nextConfig;
