@@ -273,11 +273,11 @@ export default function Portfolio() {
           </motion.h2>
           <motion.div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4" variants={staggerContainer}>
             {[
-              { title: "Java Foundations", imagePath: "/certifications/java-foundations.jpg" },
-              { title: "Foundational C# with Microsoft", imagePath: "/certifications/csharp-microsoft.jpg" },
-              { title: "Technical Support Fundamentals", imagePath: "/certifications/tech-support-fundamentals.jpg" },
-              { title: "Introduction to Cybersecurity", imagePath: "/certifications/intro-cybersecurity.jpg" },
-              { title: "The Bits and Bytes of Computer Networking", imagePath: "/certifications/bits-bytes-net.jpg" },
+              { title: "Java Foundations", imagePath: "/Webportfolio/neoportfolio//public/certifications/java-foundations.jpg" },
+              { title: "Foundational C# with Microsoft", imagePath: "/Webportfolio/neoportfolio//public/certifications/csharp-microsoft.jpg" },
+              { title: "Technical Support Fundamentals", imagePath: "/Webportfolio/neoportfolio//public/certifications/tech-support-fundamentals.jpg" },
+              { title: "Introduction to Cybersecurity", imagePath: "/Webportfolio/neoportfolio//public/certifications/intro-cybersecurity.jpg" },
+              { title: "The Bits and Bytes of Computer Networking", imagePath: "/Webportfolio/neoportfolio//public/certifications/bits-bytes-net.jpg" },
             ].map((cert) => (
               <motion.div
                 key={cert.title}
