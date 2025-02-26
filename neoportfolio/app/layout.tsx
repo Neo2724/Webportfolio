@@ -19,11 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={outfit.className}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           {children}
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }
 

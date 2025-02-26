@@ -3,21 +3,19 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Briefcase, Code, User, Github, Linkedin, Mail, Phone, ExternalLink, Award } from "lucide-react";
-
+import { Briefcase, Code, User, Github, Linkedin, Mail, Phone, ExternalLink, Award, Menu, X } from "lucide-react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { ParticleBackground } from "@/components/particle-background";
 import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react"; // Import icons for the hamburger menu
 
-const fadeIn = {
-  initial: { opacity: 0, y: 20 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6 },
+// Define the animation variants
+const fadeIn: Variants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
 
-const staggerContainer = {
+const staggerContainer: Variants = {
   animate: {
     transition: {
       staggerChildren: 0.1,
@@ -100,10 +98,10 @@ export default function Portfolio() {
         )}
       </header>
 
-      {/* Rest of your code remains unchanged */}
+      {/* Main Content */}
       <main className="container mx-auto px-4 py-8">
         {/* Overview Section */}
-        <motion.section id="overview" className="mb-12" initial="initial" animate="animate" variants={staggerContainer}>
+        <motion.section id="overview" className="mb-12" initial="hidden" animate="visible" variants={staggerContainer}>
           <motion.div className="flex flex-col md:flex-row items-center md:items-start gap-12 w-full" variants={fadeIn}>
             <div className="relative">
               <Image
@@ -152,8 +150,8 @@ export default function Portfolio() {
         <motion.section
           id="skills"
           className="mb-12"
-          initial="initial"
-          whileInView="animate"
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
           variants={staggerContainer}
         >
@@ -173,7 +171,7 @@ export default function Portfolio() {
               },
               {
                 title: "Database",
-                skills: ["MySQL", "PostgreSQL "],
+                skills: ["MySQL", "PostgreSQL"],
               },
               {
                 title: "Mobile Development",
@@ -206,8 +204,8 @@ export default function Portfolio() {
         <motion.section
           id="experience"
           className="mb-12"
-          initial="initial"
-          whileInView="animate"
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
           variants={staggerContainer}
         >
@@ -264,8 +262,8 @@ export default function Portfolio() {
         <motion.section
           id="certifications"
           className="mb-12"
-          initial="initial"
-          whileInView="animate"
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
           variants={staggerContainer}
         >
@@ -309,8 +307,8 @@ export default function Portfolio() {
         <motion.section
           id="contact"
           className="mb-12"
-          initial="initial"
-          whileInView="animate"
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
           variants={staggerContainer}
         >
